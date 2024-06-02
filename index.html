@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的网站</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      main {
+        flex: 1;
+      }
+      footer {
+        text-align: center;
+        padding: 1em 0;
+        background-color: #f1f1f1;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>欢迎访问我的网站</h1>
+
+    <h2>deepseek-coder:6.7b-instruct 在 Ubuntu 本地部署的简单介绍</h2>
+    <p>以下是如何在 Ubuntu 上本地部署 deepseek-coder:6.7b 的简单步骤：</p>
+    <ol>
+      <li>
+        <strong>更新系统</strong>
+        <pre><code>sudo apt update && sudo apt upgrade -y</code></pre>
+      </li>
+      <li>
+        <strong>安装 ollama</strong>
+        <pre><code>curl -fsSL https://ollama.com/install.sh | sh</code></pre>
+      </li>
+      <li>
+        <strong>安装模型</strong>
+        <pre><code>ollama run deepseek-coder:6.7b-instruct</code></pre>
+      </li>
+    </ol>
+    <p>
+      通过以上步骤，你可以在 Ubuntu 上成功部署并运行
+      deepseek-coder:6.7b-instruct
+    </p>
+    <footer>
+      <p>备案号：粤ICP备2021116500号-1</p>
+    </footer>
+  </body>
+</html>
